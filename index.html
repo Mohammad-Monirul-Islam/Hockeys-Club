@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockeys-Club</title>
+     <!-- Tailwind and daisy ui cdn -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+      <!-- google font manrope -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <!-- Font awesome kit -->
+        <script src="https://kit.fontawesome.com/d1bbf04757.js" crossorigin="anonymous"></script>
+      <style>
+        .font-Manrope{
+          font-family: 'Manrope', sans-serif;
+        }
+      </style>
+      <!-- custom color tailwind  -->
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'button-color': '#FF4240',
+                'color': '#131318',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="font-Manrope">
+  <!-- header section start -->
+  <header>
+    <div class="navbar bg-base-100 justify-around">
+      <div class="navbar-center ">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <a class=" lg:text-4xl text-2xl font-extrabold">Hockey’s</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 text-base font-normal text-[#424247] " >
+          <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-center">
+        <i class="fa-solid fa-magnifying-glass mr-3"></i>
+        <a class="bg-button-color py-3.5 px-6 rounded-md text-white">Get Ticket</a>
+      </div>
+    </div>
+  </header>
+  <!-- header section end -->
+
+    <main>
+  <!-- slider section start -->
+  <section>
+    <div class="carousel w-full overflow-y-hidden ">
+      <div id="slide1" class="carousel-item relative w-full justify-center lg:mt-5 mt-3">
+        <img src="Images/slider 1.png" class="lg:w-[78%] w-[88%] lg:h-[800px] min-h-[450px] rounded-2xl"/>
+        <div class="absolute flex justify-start transform -translate-y-1/2 left-72 right-5 bottom-0 space-x-2">
+          <a href="#slide4" class="btn btn-circle bg-[#000000] text-white">❮</a> 
+          <a href="#slide2" class="btn btn-circle bg-[#000000] text-white">❯</a>
+          <div class="bg-[#131318] lg:w-[30%] w-[370px] p-8 rounded-2xl absolute lg:right-56 right-0 lg:-top-44 top-24 space-y-3">
+            <h2 class="lg:text-2xl text-base font-extrabold text-white">
+              Meet all the heroes from the field
+            </h2>
+            <p class="text-gray-400 opacity-0.6 font-medium text-base">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+          </div>
+        </div>
+      </div> 
+      <div id="slide2" class="carousel-item relative w-full justify-center lg:mt-5 mt-3 ">
+        <img src="Images/slider 2.jpg" class="lg:w-[78%] w-[88%] lg:h-[800px] h-[450px] rounded-2xl"/>
+        <div class="absolute flex justify-start transform -translate-y-1/2 left-72 right-5 bottom-0 space-x-2">
+          <a href="#slide1" class="btn btn-circle bg-[#000000] text-white">❮</a> 
+          <a href="#slide3" class="btn btn-circle bg-[#000000] text-white" >❯</a>
+          <div class="bg-[#131318] lg:w-[30%] w-[370px] p-8 rounded-2xl absolute lg:right-56 right-0 lg:-top-44 top-24 space-y-3">
+            <h2 class="lg:text-2xl text-base font-extrabold text-white">
+              Hockey largely suspended during WW1
+            </h2>
+            <p class="text-gray-400 opacity-0.6 font-medium text-base">	Ladies wore blue berets, white shirts, mauve ties and long navy blue skirts with different coloured braid denoting merit. </p>
+          </div>
+        </div>
+      </div> 
+      <div id="slide3" class="carousel-item relative w-full justify-center lg:mt-5 mt-3 ">
+        <img src="Images/slider 3.jpg" class="lg:w-[78%] w-[88%] lg:h-[800px] h-[450px] rounded-2xl"/>
+        <div class="absolute flex justify-start transform -translate-y-1/2 left-72 right-5 bottom-0 space-x-2">
+          <a href="#slide2" class="btn btn-circle bg-[#000000] text-white">❮</a> 
+          <a href="#slide4" class="btn btn-circle bg-[#000000] text-white">❯</a>
+          <div class="bg-[#131318] lg:w-[30%] w-[370px] p-8 rounded-2xl absolute lg:right-56 right-0 lg:-top-44 top-24 space-y-3">
+            <h2 class="lg:text-2xl text-base font-extrabold text-white">
+              match played v Winton House (Winchester)
+            </h2>
+            <p class="text-gray-400 opacity-0.6 font-medium text-base">	Meeting held in the Market Hotel to form Winchester Hockey and Bandy Club - led by Arnold Tebbutt (Chair / 1st XI Capt.). </p>
+          </div>
+        </div>
+      </div> 
+      <div id="slide4" class="carousel-item relative w-full justify-center lg:mt-5 mt-3 ">
+        <img src="Images/slider 4.jpg" class="lg:w-[78%] w-[88%] lg:h-[800px] h-[450px] rounded-2xl"/>
+        <div class="absolute flex justify-start transform -translate-y-1/2 left-72 right-5 bottom-0 space-x-2">
+          <a href="#slide3" class="btn btn-circle bg-[#000000] text-white">❮</a> 
+          <a href="#slide1" class="btn btn-circle bg-[#000000] text-white">❯</a>
+          <div class="bg-[#131318] lg:w-[30%] w-[370px] p-8 rounded-2xl absolute lg:right-56 right-0 lg:-top-44 top-24 space-y-3">
+            <h2 class="lg:text-2xl text-base font-extrabold text-white">
+              League Secretary SC opportunity
+            </h2>
+            <p class="text-gray-400 opacity-0.6 font-medium text-base">Winchester had two separate Hockey Clubs, Winchester Men's Hockey Club and Winchester. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- border dashed start-->
+  <div class="lg:w-[78%] w-[80%] relative lg:left-52 left-10 lg:top-20 top-10 border-dashed border-b-2 bg-[#13131833]">
+  </div>
+   <!-- border dashed end-->
+
+  <!-- slder section end -->
+
+  <!-- Porgress bar section start -->
+
+<section class="lg:pt-32 pt-16">
+  <div class="text-center space-y-3">
+    <h3 class="lg:text-4xl text-xl font-extrabold">
+      Professional Hockeys Club
+    </h3>
+    <p class="font-normal text-base">
+      Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat<br> dolor. Purus urna in sit nullam proin. 
+    </p>
+  </div>
+  <!-- border dashed start-->
+  <div class="lg:w-[78%] w-[80%] relative lg:left-52 left-10 lg:top-20 top-10 border-dashed border-b-2 bg-[#13131833]">
+  </div>
+   <!-- border dashed end-->
+<div class=" lg:w-[88%] w-[100%] grid lg:grid-cols-4 grid-rows-1 gap-4 justify-items-center lg:ml-40 ml-1 lg:pt-32 pt-20 space-y-4">
+      <div class="text-center space-y-3 ">
+        <div class="radial-progress text-[#FF4240] font-extrabold " style="--value:70;" role="progressbar ">87%</div>
+        <h2 class="text-xl font-semibold text-color">Prayer Facility</h2>
+        <p class="text-[#13131899] text-base font-normal">Amet consectetur. Condimentum <br>dignissim adipiscing .</p>
+      </div>
+      <div class="text-center space-y-3 ">
+        <div class="radial-progress text-[#49D293] font-extrabold" style="--value:70;" role="progressbar">95%</div>
+        <h2 class="text-xl font-semibold text-color">Experienced Coach</h2>
+        <p class="text-[#13131899] text-base font-normal">Amet consectetur. Condimentum<br> dignissim adipiscing ..</p>
+      </div>
+      <div class="text-center space-y-3 ">
+        <div class="radial-progress text-[#FFB546] font-extrabold" style="--value:70;" role="progressbar">90%</div>
+        <h2 class="text-xl font-semibold text-color">Senior Player</h2>
+        <p class="text-[#13131899] text-base font-normal">AAmet consectetur. Condimentum<br> dignissim adipiscing .</p>
+      </div>
+      <div class="text-center space-y-3 ">
+        <div class="radial-progress text-[#4C8DF1] font-extrabold" style="--value:70;" role="progressbar">80%</div>
+        <h2 class="text-xl font-semibold text-color">Training Ground</h2>
+        <p class="text-[#13131899] text-base font-normal">Amet consectetur. Condimentum<br> dignissim adipiscing .</p>
+      </div>
+    </div>
+
+</section>
+<!-- Porgress bar section end -->
+
+   <!-- border dashed start-->
+   <div class="lg:w-[78%] w-[80%] relative lg:left-52 left-10 lg:top-20 top-10 border-dashed border-b-2 bg-[#13131833]">
+  </div>
+   <!-- border dashed end-->
+
+   <!-- Program Sections start -->
+<section class="lg:pt-32 pt-16">
+  <div class="text-center space-y-3">
+    <h3 class="lg:text-4xl text-xl font-extrabold">
+      Program Sections
+    </h3>
+    <p class="font-normal text-base">
+      Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat<br> dolor. Purus urna in sit nullam proin. 
+    </p>
+  </div>
+
+  <div class="lg:flex justify-cente lg:ml-72 ml-5 lg:w-[68%] w-[90%] lg:gap-7  pt-10 ">
+    <div class="card w-full bg-base-100 shadow-xl image-full flex-1 mb-4">
+      <figure><img src="Images/2.png" class="w-[800px]" alt="Shoes" /></figure>
+      <div class="card-body space-y-4 ">
+        <h2 class="card-title lg:text-2xl text-lg font-semibold text-white lg:pt-28 pt-8">Junior Program!</h2>
+        <p class="lg:text-base text-sm font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+          enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+        <div class="card-actions justify-start ">
+          <button class="btn bg-button-color py-3 px-4 text-white lg:text-xl text-lg font-bold border-none">Register Now!>
+        </div>
+      </div>
+    </div>
+    <div class="card w-full bg-base-100 shadow-xl image-full flex-1 mb-4">
+      <figure><img src="Images/3.png" class="w-[800px]" alt="Shoes" /></figure>
+      <div class="card-body space-y-4 ">
+        <h2 class="card-title lg:text-2xl text-lg font-semibold text-white lg:pt-28 pt-8">Junior Program!</h2>
+        <p class="lg:text-base text-sm font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+          enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+        <div class="card-actions justify-start ">
+          <button class="btn bg-button-color py-3 px-4 text-white lg:text-xl text-lg font-bold border-none">Register Now!>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=" lg:ml-72 ml-5 lg:w-[68%] w-[90%] lg:gap-7  ">
+    <div class="card w-full bg-base-100 shadow-xl image-full flex-1 mb-4">
+      <figure><img src="Images/4.png" class="w-full" alt="Shoes" /></figure>
+      <div class="card-body space-y-4 ">
+        <h2 class="card-title lg:text-2xl text-lg font-semibold text-white lg:pt-56 pt-8">Junior Program!</h2>
+        <p class="lg:text-base text-sm font-medium">Dolor sit amet consectetur. Ut urna diam<br> quis sagittis. Elit elit enim sagittis turpis in <br>magna. Id et sed euismod natoque amet<br> nunc morbi nulla. Tortor congue sed et in.</p>
+        <div class="card-actions justify-start ">
+          <button class="btn bg-button-color py-3 px-4 text-white lg:text-xl text-lg font-bold border-none">Register Now!>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  </section>
+    <!-- Program Sections start -->
+    <!-- border dashed start-->
+   <div class="lg:w-[78%] w-[80%] relative lg:left-52 left-10 lg:top-16 top-10 border-dashed border-b-2 bg-[#13131833]">
+  </div>
+   <!-- border dashed end-->
+
+   <!-- New Products Sections start -->
+   <section class="lg:pt-32 pt-16">
+    <div class="text-center space-y-3">
+      <h3 class="lg:text-4xl text-xl font-extrabold">
+        Our New Products
+      </h3>
+      <p class="font-normal text-base">
+        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat<br> dolor. Purus urna in sit nullam proin.  
+      </p>
+    </div>
+    <div>
+      
+    </div>
+    <!-- Product Card 1 -->
+    <section class="lg:grid grid-cols-2 grid-rows-1 justify-center overflow-hidden ">
+      <div class="card lg:card-side border-2 border-neutral-100 lg:m-48 m-6 lg:w-[90%] rounded-2xl lg:p-5 p-3 flex-1">
+        <div>
+          <figure><img src="Images/5.png"class="lg:[100%] w-[100%]" alt="Album"/></figure>
+        </div>
+       
+        <div class="card-body m-0 p-4">
+          <div class="flex gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_6_192)">
+                <path d="M12 17.7498L5.82799 20.9948L7.00699 14.1218L2.00699 9.25477L8.90699 8.25477L11.993 2.00177L15.079 8.25477L21.979 9.25477L16.979 14.1218L18.158 20.9948L12 17.7498Z" fill="#F99808" stroke="#F99808" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_6_192">
+                  <rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <h3>5.00</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_6_207)">
+                <path d="M10 11.9998C10 12.5302 10.2107 13.0389 10.5858 13.414C10.9609 13.789 11.4696 13.9998 12 13.9998C12.5304 13.9998 13.0391 13.789 13.4142 13.414C13.7893 13.0389 14 12.5302 14 11.9998C14 11.4693 13.7893 10.9606 13.4142 10.5855C13.0391 10.2105 12.5304 9.99976 12 9.99976C11.4696 9.99976 10.9609 10.2105 10.5858 10.5855C10.2107 10.9606 10 11.4693 10 11.9998Z" stroke="#131318" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21 11.9998C18.6 15.9998 15.6 17.9998 12 17.9998C8.4 17.9998 5.4 15.9998 3 11.9998C5.4 7.99976 8.4 5.99976 12 5.99976C15.6 5.99976 18.6 7.99976 21 11.9998Z" stroke="#131318" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_6_207">
+                  <rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <h3>20</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_6_211)">
+                <path d="M19.5 12.5717L12 19.9997L4.5 12.5717C4.0053 12.0904 3.61564 11.5118 3.35554 10.8724C3.09545 10.233 2.97056 9.5467 2.98873 8.85668C3.00691 8.16667 3.16776 7.48789 3.46115 6.86309C3.75455 6.23829 4.17413 5.681 4.69348 5.22633C5.21283 4.77165 5.8207 4.42944 6.47881 4.22123C7.13691 4.01302 7.831 3.94333 8.51736 4.01655C9.20373 4.08977 9.8675 4.30431 10.4669 4.64666C11.0662 4.98901 11.5882 5.45175 12 6.00575C12.4135 5.45577 12.9361 4.99707 13.5351 4.65835C14.1341 4.31964 14.7965 4.1082 15.4809 4.03727C16.1654 3.96634 16.8571 4.03745 17.5128 4.24614C18.1685 4.45484 18.774 4.79662 19.2915 5.25011C19.8091 5.7036 20.2274 6.25903 20.5204 6.88164C20.8134 7.50425 20.9747 8.18063 20.9943 8.86846C21.0139 9.55628 20.8913 10.2407 20.6341 10.879C20.377 11.5173 19.9909 12.0956 19.5 12.5777" stroke="#131318" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_6_211">
+                  <rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <h4>200</h4>
+          </div>
+          <h2 class="card-title lg:text-xl text-base tex-color font-bold">World Cup Flags Football</h2>
+          <p class="text-base font-medium text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+          <div class=" flex gap-3">
+            <h2 class="lg:text-lg text-base font-bold text-[#FF4240]">Price - $22.00</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_7_227)">
+                <path d="M4 18.9998C4 19.5302 4.21071 20.0389 4.58579 20.414C4.96086 20.789 5.46957 20.9998 6 20.9998C6.53043 20.9998 7.03914 20.789 7.41421 20.414C7.78929 20.0389 8 19.5302 8 18.9998C8 18.4693 7.78929 17.9606 7.41421 17.5855C7.03914 17.2105 6.53043 16.9998 6 16.9998C5.46957 16.9998 4.96086 17.2105 4.58579 17.5855C4.21071 17.9606 4 18.4693 4 18.9998Z" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 16.9998H6V2.99976H4" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 4.99976L20 5.99976L19.284 11.0108M14 12.9998H6" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21.121 20.1208C21.5406 19.7013 21.8265 19.1667 21.9423 18.5847C22.0581 18.0028 21.9988 17.3995 21.7717 16.8513C21.5447 16.3031 21.1602 15.8345 20.6668 15.5048C20.1734 15.1751 19.5934 14.9991 19 14.9991C18.4066 14.9991 17.8266 15.1751 17.3332 15.5048C16.8398 15.8345 16.4553 16.3031 16.2283 16.8513C16.0012 17.3995 15.9419 18.0028 16.0577 18.5847C16.1735 19.1667 16.4594 19.7013 16.879 20.1208C17.297 20.5398 18.004 21.1658 19 21.9998C20.051 21.1098 20.759 20.4838 21.121 20.1208Z" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M19 17.9998V18.0098" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_7_227">
+                  <rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <h6>Delivery Fee : Free</h6>
+
+          </div>
+        </div>
+      </div>
+      <!-- Product Card 2 -->
+      <div class="card lg:card-side border-2 border-neutral-100 lg:m-48 m-6 lg:w-[90%] rounded-2xl lg:p-5 p-3 flex-1">
+        <div>
+          <figure><img src="Images/5.png"class="lg:[100%] w-[100%]" alt="Album"/></figure>
+        </div>
+       
+        <div class="card-body m-0 p-4">
+          <div class="flex gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_6_192)">
+                <path d="M12 17.7498L5.82799 20.9948L7.00699 14.1218L2.00699 9.25477L8.90699 8.25477L11.993 2.00177L15.079 8.25477L21.979 9.25477L16.979 14.1218L18.158 20.9948L12 17.7498Z" fill="#F99808" stroke="#F99808" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_6_192">
+                  <rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <h3>5.00</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_6_207)">
+                <path d="M10 11.9998C10 12.5302 10.2107 13.0389 10.5858 13.414C10.9609 13.789 11.4696 13.9998 12 13.9998C12.5304 13.9998 13.0391 13.789 13.4142 13.414C13.7893 13.0389 14 12.5302 14 11.9998C14 11.4693 13.7893 10.9606 13.4142 10.5855C13.0391 10.2105 12.5304 9.99976 12 9.99976C11.4696 9.99976 10.9609 10.2105 10.5858 10.5855C10.2107 10.9606 10 11.4693 10 11.9998Z" stroke="#131318" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21 11.9998C18.6 15.9998 15.6 17.9998 12 17.9998C8.4 17.9998 5.4 15.9998 3 11.9998C5.4 7.99976 8.4 5.99976 12 5.99976C15.6 5.99976 18.6 7.99976 21 11.9998Z" stroke="#131318" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_6_207">
+                  <rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <h3>20</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_6_211)">
+                <path d="M19.5 12.5717L12 19.9997L4.5 12.5717C4.0053 12.0904 3.61564 11.5118 3.35554 10.8724C3.09545 10.233 2.97056 9.5467 2.98873 8.85668C3.00691 8.16667 3.16776 7.48789 3.46115 6.86309C3.75455 6.23829 4.17413 5.681 4.69348 5.22633C5.21283 4.77165 5.8207 4.42944 6.47881 4.22123C7.13691 4.01302 7.831 3.94333 8.51736 4.01655C9.20373 4.08977 9.8675 4.30431 10.4669 4.64666C11.0662 4.98901 11.5882 5.45175 12 6.00575C12.4135 5.45577 12.9361 4.99707 13.5351 4.65835C14.1341 4.31964 14.7965 4.1082 15.4809 4.03727C16.1654 3.96634 16.8571 4.03745 17.5128 4.24614C18.1685 4.45484 18.774 4.79662 19.2915 5.25011C19.8091 5.7036 20.2274 6.25903 20.5204 6.88164C20.8134 7.50425 20.9747 8.18063 20.9943 8.86846C21.0139 9.55628 20.8913 10.2407 20.6341 10.879C20.377 11.5173 19.9909 12.0956 19.5 12.5777" stroke="#131318" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_6_211">
+                  <rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <h4>200</h4>
+          </div>
+          <h2 class="card-title lg:text-xl text-base tex-color font-bold">World Cup Flags Football</h2>
+          <p class="text-base font-medium text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+          <div class=" flex gap-3">
+            <h2 class="lg:text-lg text-base font-bold text-[#FF4240]">Price - $22.00</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_7_227)">
+                <path d="M4 18.9998C4 19.5302 4.21071 20.0389 4.58579 20.414C4.96086 20.789 5.46957 20.9998 6 20.9998C6.53043 20.9998 7.03914 20.789 7.41421 20.414C7.78929 20.0389 8 19.5302 8 18.9998C8 18.4693 7.78929 17.9606 7.41421 17.5855C7.03914 17.2105 6.53043 16.9998 6 16.9998C5.46957 16.9998 4.96086 17.2105 4.58579 17.5855C4.21071 17.9606 4 18.4693 4 18.9998Z" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 16.9998H6V2.99976H4" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 4.99976L20 5.99976L19.284 11.0108M14 12.9998H6" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21.121 20.1208C21.5406 19.7013 21.8265 19.1667 21.9423 18.5847C22.0581 18.0028 21.9988 17.3995 21.7717 16.8513C21.5447 16.3031 21.1602 15.8345 20.6668 15.5048C20.1734 15.1751 19.5934 14.9991 19 14.9991C18.4066 14.9991 17.8266 15.1751 17.3332 15.5048C16.8398 15.8345 16.4553 16.3031 16.2283 16.8513C16.0012 17.3995 15.9419 18.0028 16.0577 18.5847C16.1735 19.1667 16.4594 19.7013 16.879 20.1208C17.297 20.5398 18.004 21.1658 19 21.9998C20.051 21.1098 20.759 20.4838 21.121 20.1208Z" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M19 17.9998V18.0098" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_7_227">
+                  <rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <h6>Delivery Fee : Free</h6>
+
+          </div>
+        </div>
+      </div>
+       <!-- Product Card 3 -->
+       <div class="card lg:card-side border-2 border-neutral-100 lg:m-48 m-6 lg:w-[90%] rounded-2xl lg:p-5 p-3 flex-1">
+        <div>
+          <figure><img src="Images/6.png"class="lg:[100%] w-[100%]" alt="Album"/></figure>
+        </div>
+       
+        <div class="card-body m-0 p-4">
+          <div class="flex gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_6_192)">
+                <path d="M12 17.7498L5.82799 20.9948L7.00699 14.1218L2.00699 9.25477L8.90699 8.25477L11.993 2.00177L15.079 8.25477L21.979 9.25477L16.979 14.1218L18.158 20.9948L12 17.7498Z" fill="#F99808" stroke="#F99808" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_6_192">
+                  <rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <h3>5.00</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_6_207)">
+                <path d="M10 11.9998C10 12.5302 10.2107 13.0389 10.5858 13.414C10.9609 13.789 11.4696 13.9998 12 13.9998C12.5304 13.9998 13.0391 13.789 13.4142 13.414C13.7893 13.0389 14 12.5302 14 11.9998C14 11.4693 13.7893 10.9606 13.4142 10.5855C13.0391 10.2105 12.5304 9.99976 12 9.99976C11.4696 9.99976 10.9609 10.2105 10.5858 10.5855C10.2107 10.9606 10 11.4693 10 11.9998Z" stroke="#131318" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21 11.9998C18.6 15.9998 15.6 17.9998 12 17.9998C8.4 17.9998 5.4 15.9998 3 11.9998C5.4 7.99976 8.4 5.99976 12 5.99976C15.6 5.99976 18.6 7.99976 21 11.9998Z" stroke="#131318" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_6_207">
+                  <rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <h3>20</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_6_211)">
+                <path d="M19.5 12.5717L12 19.9997L4.5 12.5717C4.0053 12.0904 3.61564 11.5118 3.35554 10.8724C3.09545 10.233 2.97056 9.5467 2.98873 8.85668C3.00691 8.16667 3.16776 7.48789 3.46115 6.86309C3.75455 6.23829 4.17413 5.681 4.69348 5.22633C5.21283 4.77165 5.8207 4.42944 6.47881 4.22123C7.13691 4.01302 7.831 3.94333 8.51736 4.01655C9.20373 4.08977 9.8675 4.30431 10.4669 4.64666C11.0662 4.98901 11.5882 5.45175 12 6.00575C12.4135 5.45577 12.9361 4.99707 13.5351 4.65835C14.1341 4.31964 14.7965 4.1082 15.4809 4.03727C16.1654 3.96634 16.8571 4.03745 17.5128 4.24614C18.1685 4.45484 18.774 4.79662 19.2915 5.25011C19.8091 5.7036 20.2274 6.25903 20.5204 6.88164C20.8134 7.50425 20.9747 8.18063 20.9943 8.86846C21.0139 9.55628 20.8913 10.2407 20.6341 10.879C20.377 11.5173 19.9909 12.0956 19.5 12.5777" stroke="#131318" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_6_211">
+                  <rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <h4>200</h4>
+          </div>
+          <h2 class="card-title lg:text-xl text-base tex-color font-bold">World Cup Flags Football</h2>
+          <p class="text-base font-medium text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+          <div class=" flex gap-3">
+            <h2 class="lg:text-lg text-base font-bold text-[#FF4240]">Price - $22.00</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_7_227)">
+                <path d="M4 18.9998C4 19.5302 4.21071 20.0389 4.58579 20.414C4.96086 20.789 5.46957 20.9998 6 20.9998C6.53043 20.9998 7.03914 20.789 7.41421 20.414C7.78929 20.0389 8 19.5302 8 18.9998C8 18.4693 7.78929 17.9606 7.41421 17.5855C7.03914 17.2105 6.53043 16.9998 6 16.9998C5.46957 16.9998 4.96086 17.2105 4.58579 17.5855C4.21071 17.9606 4 18.4693 4 18.9998Z" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 16.9998H6V2.99976H4" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 4.99976L20 5.99976L19.284 11.0108M14 12.9998H6" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21.121 20.1208C21.5406 19.7013 21.8265 19.1667 21.9423 18.5847C22.0581 18.0028 21.9988 17.3995 21.7717 16.8513C21.5447 16.3031 21.1602 15.8345 20.6668 15.5048C20.1734 15.1751 19.5934 14.9991 19 14.9991C18.4066 14.9991 17.8266 15.1751 17.3332 15.5048C16.8398 15.8345 16.4553 16.3031 16.2283 16.8513C16.0012 17.3995 15.9419 18.0028 16.0577 18.5847C16.1735 19.1667 16.4594 19.7013 16.879 20.1208C17.297 20.5398 18.004 21.1658 19 21.9998C20.051 21.1098 20.759 20.4838 21.121 20.1208Z" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M19 17.9998V18.0098" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_7_227">
+                  <rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <h6>Delivery Fee : Free</h6>
+
+          </div>
+        </div>
+      </div>
+       <!-- Product Card 4 -->
+       <div class="card lg:card-side border-2 border-neutral-100 lg:m-48 m-6 lg:w-[90%] rounded-2xl lg:p-5 p-3 flex-1">
+        <div>
+          <figure><img src="Images/7.png"class="lg:[100%] w-[100%]" alt="Album"/></figure>
+        </div>
+       
+        <div class="card-body m-0 p-4">
+          <div class="flex gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_6_192)">
+                <path d="M12 17.7498L5.82799 20.9948L7.00699 14.1218L2.00699 9.25477L8.90699 8.25477L11.993 2.00177L15.079 8.25477L21.979 9.25477L16.979 14.1218L18.158 20.9948L12 17.7498Z" fill="#F99808" stroke="#F99808" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_6_192">
+                  <rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <h3>5.00</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_6_207)">
+                <path d="M10 11.9998C10 12.5302 10.2107 13.0389 10.5858 13.414C10.9609 13.789 11.4696 13.9998 12 13.9998C12.5304 13.9998 13.0391 13.789 13.4142 13.414C13.7893 13.0389 14 12.5302 14 11.9998C14 11.4693 13.7893 10.9606 13.4142 10.5855C13.0391 10.2105 12.5304 9.99976 12 9.99976C11.4696 9.99976 10.9609 10.2105 10.5858 10.5855C10.2107 10.9606 10 11.4693 10 11.9998Z" stroke="#131318" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21 11.9998C18.6 15.9998 15.6 17.9998 12 17.9998C8.4 17.9998 5.4 15.9998 3 11.9998C5.4 7.99976 8.4 5.99976 12 5.99976C15.6 5.99976 18.6 7.99976 21 11.9998Z" stroke="#131318" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_6_207">
+                  <rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <h3>20</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_6_211)">
+                <path d="M19.5 12.5717L12 19.9997L4.5 12.5717C4.0053 12.0904 3.61564 11.5118 3.35554 10.8724C3.09545 10.233 2.97056 9.5467 2.98873 8.85668C3.00691 8.16667 3.16776 7.48789 3.46115 6.86309C3.75455 6.23829 4.17413 5.681 4.69348 5.22633C5.21283 4.77165 5.8207 4.42944 6.47881 4.22123C7.13691 4.01302 7.831 3.94333 8.51736 4.01655C9.20373 4.08977 9.8675 4.30431 10.4669 4.64666C11.0662 4.98901 11.5882 5.45175 12 6.00575C12.4135 5.45577 12.9361 4.99707 13.5351 4.65835C14.1341 4.31964 14.7965 4.1082 15.4809 4.03727C16.1654 3.96634 16.8571 4.03745 17.5128 4.24614C18.1685 4.45484 18.774 4.79662 19.2915 5.25011C19.8091 5.7036 20.2274 6.25903 20.5204 6.88164C20.8134 7.50425 20.9747 8.18063 20.9943 8.86846C21.0139 9.55628 20.8913 10.2407 20.6341 10.879C20.377 11.5173 19.9909 12.0956 19.5 12.5777" stroke="#131318" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_6_211">
+                  <rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <h4>200</h4>
+          </div>
+          <h2 class="card-title lg:text-xl text-base tex-color font-bold">World Cup Flags Football</h2>
+          <p class="text-base font-medium text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+          <div class=" flex gap-3">
+            <h2 class="lg:text-lg text-base font-bold text-[#FF4240]">Price - $22.00</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_7_227)">
+                <path d="M4 18.9998C4 19.5302 4.21071 20.0389 4.58579 20.414C4.96086 20.789 5.46957 20.9998 6 20.9998C6.53043 20.9998 7.03914 20.789 7.41421 20.414C7.78929 20.0389 8 19.5302 8 18.9998C8 18.4693 7.78929 17.9606 7.41421 17.5855C7.03914 17.2105 6.53043 16.9998 6 16.9998C5.46957 16.9998 4.96086 17.2105 4.58579 17.5855C4.21071 17.9606 4 18.4693 4 18.9998Z" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 16.9998H6V2.99976H4" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 4.99976L20 5.99976L19.284 11.0108M14 12.9998H6" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21.121 20.1208C21.5406 19.7013 21.8265 19.1667 21.9423 18.5847C22.0581 18.0028 21.9988 17.3995 21.7717 16.8513C21.5447 16.3031 21.1602 15.8345 20.6668 15.5048C20.1734 15.1751 19.5934 14.9991 19 14.9991C18.4066 14.9991 17.8266 15.1751 17.3332 15.5048C16.8398 15.8345 16.4553 16.3031 16.2283 16.8513C16.0012 17.3995 15.9419 18.0028 16.0577 18.5847C16.1735 19.1667 16.4594 19.7013 16.879 20.1208C17.297 20.5398 18.004 21.1658 19 21.9998C20.051 21.1098 20.759 20.4838 21.121 20.1208Z" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M19 17.9998V18.0098" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_7_227">
+                  <rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <h6>Delivery Fee : Free</h6>
+
+          </div>
+        </div>
+      </div>
+      <!-- Product Card 5-->
+      <div class="card lg:card-side border-2 border-neutral-100 lg:m-48 m-6 lg:w-[90%] rounded-2xl lg:p-5 p-3 flex-1">
+        <div>
+          <figure><img src="Images/8.png"class="lg:[100%] w-[100%]" alt="Album"/></figure>
+        </div>
+       
+        <div class="card-body m-0 p-4">
+          <div class="flex gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_6_192)">
+                <path d="M12 17.7498L5.82799 20.9948L7.00699 14.1218L2.00699 9.25477L8.90699 8.25477L11.993 2.00177L15.079 8.25477L21.979 9.25477L16.979 14.1218L18.158 20.9948L12 17.7498Z" fill="#F99808" stroke="#F99808" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_6_192">
+                  <rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <h3>5.00</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_6_207)">
+                <path d="M10 11.9998C10 12.5302 10.2107 13.0389 10.5858 13.414C10.9609 13.789 11.4696 13.9998 12 13.9998C12.5304 13.9998 13.0391 13.789 13.4142 13.414C13.7893 13.0389 14 12.5302 14 11.9998C14 11.4693 13.7893 10.9606 13.4142 10.5855C13.0391 10.2105 12.5304 9.99976 12 9.99976C11.4696 9.99976 10.9609 10.2105 10.5858 10.5855C10.2107 10.9606 10 11.4693 10 11.9998Z" stroke="#131318" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21 11.9998C18.6 15.9998 15.6 17.9998 12 17.9998C8.4 17.9998 5.4 15.9998 3 11.9998C5.4 7.99976 8.4 5.99976 12 5.99976C15.6 5.99976 18.6 7.99976 21 11.9998Z" stroke="#131318" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_6_207">
+                  <rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <h3>20</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_6_211)">
+                <path d="M19.5 12.5717L12 19.9997L4.5 12.5717C4.0053 12.0904 3.61564 11.5118 3.35554 10.8724C3.09545 10.233 2.97056 9.5467 2.98873 8.85668C3.00691 8.16667 3.16776 7.48789 3.46115 6.86309C3.75455 6.23829 4.17413 5.681 4.69348 5.22633C5.21283 4.77165 5.8207 4.42944 6.47881 4.22123C7.13691 4.01302 7.831 3.94333 8.51736 4.01655C9.20373 4.08977 9.8675 4.30431 10.4669 4.64666C11.0662 4.98901 11.5882 5.45175 12 6.00575C12.4135 5.45577 12.9361 4.99707 13.5351 4.65835C14.1341 4.31964 14.7965 4.1082 15.4809 4.03727C16.1654 3.96634 16.8571 4.03745 17.5128 4.24614C18.1685 4.45484 18.774 4.79662 19.2915 5.25011C19.8091 5.7036 20.2274 6.25903 20.5204 6.88164C20.8134 7.50425 20.9747 8.18063 20.9943 8.86846C21.0139 9.55628 20.8913 10.2407 20.6341 10.879C20.377 11.5173 19.9909 12.0956 19.5 12.5777" stroke="#131318" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_6_211">
+                  <rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <h4>200</h4>
+          </div>
+          <h2 class="card-title lg:text-xl text-base tex-color font-bold">World Cup Flags Football</h2>
+          <p class="text-base font-medium text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+          <div class=" flex gap-3">
+            <h2 class="lg:text-lg text-base font-bold text-[#FF4240]">Price - $22.00</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_7_227)">
+                <path d="M4 18.9998C4 19.5302 4.21071 20.0389 4.58579 20.414C4.96086 20.789 5.46957 20.9998 6 20.9998C6.53043 20.9998 7.03914 20.789 7.41421 20.414C7.78929 20.0389 8 19.5302 8 18.9998C8 18.4693 7.78929 17.9606 7.41421 17.5855C7.03914 17.2105 6.53043 16.9998 6 16.9998C5.46957 16.9998 4.96086 17.2105 4.58579 17.5855C4.21071 17.9606 4 18.4693 4 18.9998Z" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 16.9998H6V2.99976H4" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 4.99976L20 5.99976L19.284 11.0108M14 12.9998H6" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21.121 20.1208C21.5406 19.7013 21.8265 19.1667 21.9423 18.5847C22.0581 18.0028 21.9988 17.3995 21.7717 16.8513C21.5447 16.3031 21.1602 15.8345 20.6668 15.5048C20.1734 15.1751 19.5934 14.9991 19 14.9991C18.4066 14.9991 17.8266 15.1751 17.3332 15.5048C16.8398 15.8345 16.4553 16.3031 16.2283 16.8513C16.0012 17.3995 15.9419 18.0028 16.0577 18.5847C16.1735 19.1667 16.4594 19.7013 16.879 20.1208C17.297 20.5398 18.004 21.1658 19 21.9998C20.051 21.1098 20.759 20.4838 21.121 20.1208Z" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M19 17.9998V18.0098" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_7_227">
+                  <rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <h6>Delivery Fee : Free</h6>
+
+          </div>
+        </div>
+      </div>
+      <!-- Product Card 6 -->
+      <div class="card lg:card-side border-2 border-neutral-100 lg:m-48 m-6 lg:w-[90%] rounded-2xl lg:p-5 p-3 flex-1">
+        <div>
+          <figure><img src="Images/9.png"class="lg:[100%] w-[100%]" alt="Album"/></figure>
+        </div>
+       
+        <div class="card-body m-0 p-4">
+          <div class="flex gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_6_192)">
+                <path d="M12 17.7498L5.82799 20.9948L7.00699 14.1218L2.00699 9.25477L8.90699 8.25477L11.993 2.00177L15.079 8.25477L21.979 9.25477L16.979 14.1218L18.158 20.9948L12 17.7498Z" fill="#F99808" stroke="#F99808" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_6_192">
+                  <rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <h3>5.00</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_6_207)">
+                <path d="M10 11.9998C10 12.5302 10.2107 13.0389 10.5858 13.414C10.9609 13.789 11.4696 13.9998 12 13.9998C12.5304 13.9998 13.0391 13.789 13.4142 13.414C13.7893 13.0389 14 12.5302 14 11.9998C14 11.4693 13.7893 10.9606 13.4142 10.5855C13.0391 10.2105 12.5304 9.99976 12 9.99976C11.4696 9.99976 10.9609 10.2105 10.5858 10.5855C10.2107 10.9606 10 11.4693 10 11.9998Z" stroke="#131318" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21 11.9998C18.6 15.9998 15.6 17.9998 12 17.9998C8.4 17.9998 5.4 15.9998 3 11.9998C5.4 7.99976 8.4 5.99976 12 5.99976C15.6 5.99976 18.6 7.99976 21 11.9998Z" stroke="#131318" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_6_207">
+                  <rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <h3>20</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_6_211)">
+                <path d="M19.5 12.5717L12 19.9997L4.5 12.5717C4.0053 12.0904 3.61564 11.5118 3.35554 10.8724C3.09545 10.233 2.97056 9.5467 2.98873 8.85668C3.00691 8.16667 3.16776 7.48789 3.46115 6.86309C3.75455 6.23829 4.17413 5.681 4.69348 5.22633C5.21283 4.77165 5.8207 4.42944 6.47881 4.22123C7.13691 4.01302 7.831 3.94333 8.51736 4.01655C9.20373 4.08977 9.8675 4.30431 10.4669 4.64666C11.0662 4.98901 11.5882 5.45175 12 6.00575C12.4135 5.45577 12.9361 4.99707 13.5351 4.65835C14.1341 4.31964 14.7965 4.1082 15.4809 4.03727C16.1654 3.96634 16.8571 4.03745 17.5128 4.24614C18.1685 4.45484 18.774 4.79662 19.2915 5.25011C19.8091 5.7036 20.2274 6.25903 20.5204 6.88164C20.8134 7.50425 20.9747 8.18063 20.9943 8.86846C21.0139 9.55628 20.8913 10.2407 20.6341 10.879C20.377 11.5173 19.9909 12.0956 19.5 12.5777" stroke="#131318" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_6_211">
+                  <rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <h4>200</h4>
+          </div>
+          <h2 class="card-title lg:text-xl text-base tex-color font-bold">World Cup Flags Football</h2>
+          <p class="text-base font-medium text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+          <div class=" flex gap-3">
+            <h2 class="lg:text-lg text-base font-bold text-[#FF4240]">Price - $22.00</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_7_227)">
+                <path d="M4 18.9998C4 19.5302 4.21071 20.0389 4.58579 20.414C4.96086 20.789 5.46957 20.9998 6 20.9998C6.53043 20.9998 7.03914 20.789 7.41421 20.414C7.78929 20.0389 8 19.5302 8 18.9998C8 18.4693 7.78929 17.9606 7.41421 17.5855C7.03914 17.2105 6.53043 16.9998 6 16.9998C5.46957 16.9998 4.96086 17.2105 4.58579 17.5855C4.21071 17.9606 4 18.4693 4 18.9998Z" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 16.9998H6V2.99976H4" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 4.99976L20 5.99976L19.284 11.0108M14 12.9998H6" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21.121 20.1208C21.5406 19.7013 21.8265 19.1667 21.9423 18.5847C22.0581 18.0028 21.9988 17.3995 21.7717 16.8513C21.5447 16.3031 21.1602 15.8345 20.6668 15.5048C20.1734 15.1751 19.5934 14.9991 19 14.9991C18.4066 14.9991 17.8266 15.1751 17.3332 15.5048C16.8398 15.8345 16.4553 16.3031 16.2283 16.8513C16.0012 17.3995 15.9419 18.0028 16.0577 18.5847C16.1735 19.1667 16.4594 19.7013 16.879 20.1208C17.297 20.5398 18.004 21.1658 19 21.9998C20.051 21.1098 20.759 20.4838 21.121 20.1208Z" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M19 17.9998V18.0098" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_7_227">
+                  <rect width="24" height="24" fill="white" transform="translate(0 -0.000244141)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <h6>Delivery Fee : Free</h6>
+
+          </div>
+        </div>
+      </div>
+
+      
+    </section>
+    </section>
+   <!-- New Products Sections end -->
+
+    <!-- border dashed start-->
+    <div class="lg:w-[78%] w-[80%] relative lg:left-52 left-10 lg:top-16 top-10 border-dashed border-b-2 bg-[#13131833]">
+    </div>
+     <!-- border dashed end-->
+  
+     <!-- FAQ Sections start -->
+     <section class="lg:pt-32 pt-16 ">
+      <div class="text-center space-y-3  ">
+        <h3 class="lg:text-4xl text-xl font-extrabold">
+          Clients Question
+        </h3>
+        <p class="font-normal text-base">
+          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis<br> placerat dolor. Purus urna in sit nullam proin. 
+        </p>
+      </div>
+      
+    <!-- border dashed start-->
+    <div class="lg:w-[78%] w-[80%] relative lg:left-52 left-10 lg:top-10 top-10 border-dashed border-b-2 bg-[#13131833]">
+    </div>
+     <!-- border dashed end-->
+      <section class="">
+        <section class="lg:flex justify-center lg:w-[90%] lg:ml-24 ">
+          <div class="card lg:card-side border-2 border-neutral-100 lg:m-28 mt-20 mx-10  rounded-2xl lg:p-5 p-3 flex-1">
+            <div class="">
+              <img src="Images/faq 4.png"class="lg:[100%] w-[100%] lg:h-auto h-[276px] mr-[100px] " alt="Album"/>
+            </div>
+           <div class="card-body m-0 p-4">
+          <!-- Accordion -->
+          <div class="collapse collapse-plus border-b-2 border-slate-100 ">
+            <input type="radio" name="my-accordion-3" checked="checked" /> 
+            <div class="collapse-title text-xl font-bold">
+              Respect in Sport
+            </div>
+            <div class="collapse-content"> 
+              <p class="text-base font-normal text-[#13131899]">What training do hockey coaches receive?
+                Are there professional coaches at the minor hockey level?
+                What is the Respect in Sport (RIS) program?</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus border-b-2 border-slate-100">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-bold">
+              Hockey Canada Safety
+            </div>
+            <div class="collapse-content"> 
+              <p class="text-base font-normal text-[#13131899]">Does every minor hockey team require a Safety Person?
+                 What are the roles and responsibilities of the Safety Person?
+                 Does the Safety Person have to be a medical professional?</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus border-b-2 border-slate-100">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-bold">
+              Logistics, Communications
+            </div>
+            <div class="collapse-content"> 
+              <p class="text-base font-normal text-[#13131899]">What if we’re moving to a new city? How do member transfers work?
+                 What days of the week will my child be on the ice?
+                 Do we have to travel out of town, and if so, how often?</p>
+            </div>
+            
+          </div>
+          <div class="collapse collapse-plus border-b-2 border-slate-100">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-bold">
+              What are the minor 
+            </div>
+            <div class="collapse-content"> 
+              <p class="text-base font-normal text-[#13131899]">support an AE team, and therefore your local hockey association may or may not offer AE hockey.</p>
+            </div>
+            
+          </div>
+          <div class="collapse collapse-plus border-b-2 border-slate-100">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-bold">
+              How does the work?
+            </div>
+            <div class="collapse-content"> 
+              <p class="text-base font-normal text-[#13131899]">You can register your child with your local hockey association in person or online. In order to register your child, you will need </p>
+            </div>
+            
+          </div>
+          </div>
+         
+        </section>
+      </section>
+     <!-- FAQ Sections end -->
+     <!-- border dashed start-->
+    <div class="lg:w-[78%] w-[80%] relative lg:left-52 left-10 lg:top-10 top-10 border-dashed border-b-2 bg-[#13131833]">
+    </div>
+     <!-- border dashed end-->
+
+      <!-- Contact Sections start -->
+      <section class="lg:pt-20 pt-16">
+        <div class="text-center space-y-3">
+          <h3 class="lg:text-4xl text-xl font-extrabold">
+            Get In Touch
+          </h3>
+          <p class="font-normal text-base">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat<br> dolor. Purus urna in sit nullam proin. 
+          </p>
+        </div>
+         <!-- border dashed start-->
+    <div class="lg:w-[78%] w-[80%] relative lg:left-52 left-10 lg:top-10 top-10 border-dashed border-b-2 bg-[#13131833]">
+    </div>
+     <!-- border dashed end-->
+
+     <!-- Contact -->
+     <div class="lg:flex lg:w-[80%] w-[90%] lg:ml-[11%] ml-[5%] lg:mt-10 ">
+      <div class="card lg:w-[40%] w-[100%] border-2 border-neutral-100 text-primary-content mt-20 space-y-4">
+        <div class="card-body space-y-3 ">
+          <div class="bg-[#bced6d19] p-8 rounded-2xl space-y-2">
+            <img src="Images/Group 1171275317.png" alt="">
+            <h2 class="card-title text-base font-normal text-[#13131866]">Phone Number : </h2>
+            <p class="text-lg font-bold text-color">(+62) 123-321-543</p>
+          </div>
+          <div class="bg-[#fddd5f19] p-8 rounded-2xl space-y-2">
+            <img src="Images/Group 1171275318.png" alt="">
+            <h2 class="card-title text-base font-normal text-[#13131866]">Email:</h2>
+            <p class="text-lg font-bold text-color">hockeys@support.com</p>
+          </div>
+          <div class="bg-[#629CF31A] p-8 rounded-2xl space-y-2">
+            <img src="Images/Group 1171275319.png" alt="">
+            <h2 class="card-title text-base font-normal text-[#13131866]">Location:</h2>
+            <p class="text-lg font-bold text-color">152/1 Mohakhali Wireless Gate</p>
+          </div>
+  </div>
+      </div>
+      <div class=" items-center justify-center lg:p-12 p-3 lg:w-[70%] w-[100%] lg:mt-8 mt-0">
+        <div class="mx-auto w-full w-[850px]">
+          <form action="https://formbold.com/s/FORM_ID" method="POST">
+            <div class="mb-5 lg:flex gap-2">
+              <label for="name" class="mb-3 block text-base font-medium text-[#07074D]"></label>
+              <input type="text" name="name" id="name" placeholder="Enter your full name"require
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none"/>
+                <label for="email"class="mb-3 block text-base font-medium text-[#07074D]"></label>
+              <input type="email"name="email"id="email"placeholder="Enter your email"require
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none"/>
+            </div>
+            <div class="mb-5 lg:flex gap-2">
+              <label for="subject"class="mb-3 block text-base font-medium text-[#07074D]"></label>
+              <input type="text"name="subject"id="subject"placeholder="Enter your subject"require
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none"/>
+                <label for="subject"class="mb-3 block text-base font-medium text-[#07074D]"></label>
+              <input type="number"name="number"id="subject"placeholder="Enter your phone number"require
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none"/>
+            </div>
+
+            <div class="mb-5">
+              <label for="message"class="mb-3 block text-base font-medium text-[#07074D]"></label>
+              <textarea rows="14"name="message"id="message"placeholder="Write your message"require
+                class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none"
+              ></textarea>
+            </div>
+            <div>
+              <button
+                class="w-full hover:shadow-form rounded-md bg-[#FF4240] py-3 px-8 text-xl font-bold text-white outline-none"
+              >
+              Send Message
+              </button>
+            </div>
+            </div>
+          </form>
+        </div>
+      </div>
+     </div>
+     
+    
+      </section>
+     <!-- Contact Sections end -->
+
+</main>
+<footer>
+  <div class=" grid justify-center space-y-3 bg-[#13131807] rounded-2xl py-5 lg:w-[80%] lg:ml-[11%] mt-7">
+    <div>
+      <h class="text-2xl font-bold text-[#131318] text-center">Social Media</h>
+    </div>
+    <div class="flex gap-4 justify-center ">
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-github"></i>
+    </div>
+  </div>
+  <footer class="footer p-10 bg-color text-white py-16 text-base-content mt-10">
+    <aside class="lg:ml-10 ml-2">
+      <h2 class="text-3xl font-bold">Get In Touch</h2>
+      <p class="text-gray-300">Dit amet consectetur. Condimentum  adipiscing,<br> aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+      <div class="flex gap-4">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-github"></i>
+      </div>
+    </aside> 
+    <nav>
+      <header class="footer-title text-gray-400">Company</header> 
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Leadership</a>
+      <a class="link link-hover">Careers</a>
+      <a class="link link-hover">News & Article</a>
+      <a class="link link-hover">Legal</a>
+      <a class="link link-hover">Notice</a>
+    </nav> 
+    <nav>
+      <header class="footer-title">Support</header> 
+      <a class="link link-hover">Help Center</a>
+      <a class="link link-hover">FAQ</a>
+      <a class="link link-hover">Ticket</a>
+      <a class="link link-hover">Support</a>
+      <a class="link link-hover">Contact Us</a>
+    </nav> 
+    <nav>
+      <header class="footer-title">Services</header> 
+      <a class="link link-hover">Academy</a>
+      <a class="link link-hover">Group Lesson</a>
+      <a class="link link-hover">Cookie policy</a>
+      <a class="link link-hover">Private Lesson</a>
+      <a class="link link-hover">Hockeys for kids </a>
+
+    </nav>
+  </footer>
+</footer>
+</body>
+</html>
